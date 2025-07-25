@@ -1,0 +1,37 @@
+{
+  "session_info": {
+    "start_time": "2025-07-25T17:15:35.880307",
+    "duration_seconds": 21.836721181869507,
+    "end_time": "2025-07-25T17:15:57.722030"
+  },
+  "statistics": {
+    "frames": {
+      "total": 312,
+      "processed": 104,
+      "skipped": 208,
+      "skip_ratio": 0.6666666666666666
+    },
+    "detection": {
+      "anomalies_detected": 97,
+      "anomaly_rate": 0.9326923076923077,
+      "alerts_sent": 1,
+      "alert_rate": 0.010309278350515464
+    },
+    "performance": {
+      "avg_processing_time": 0.1633783205591067,
+      "min_processing_time": 0.13912129402160645,
+      "max_processing_time": 0.7140059471130371,
+      "std_processing_time": 0.0574872939445499,
+      "avg_fps": 6.1207631255961035,
+      "theoretical_max_fps": 7.187972244167693
+    },
+    "thresholds": {
+      "current_threshold": 0.002848,
+      "current_period": "DIA"
+    }
+  },
+  "alerts": [
+    {
+      "timestamp": "2025-07-25T17:15:37.532213",
+      "type": "ALERT",
+      "confidence": 

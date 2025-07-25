@@ -1,0 +1,63 @@
+{
+  "generation_info": {
+    "timestamp": "2025-07-25 13:40:27",
+    "tensorflow_version": "2.13.0",
+    "model_path": "models/best_model_fixed.h5"
+  },
+  "model_info": {
+    "total_parameters": 46256,
+    "model_size_mb": 0.63,
+    "input_shape": "(None, 8, 64, 64, 3)",
+    "output_shape": "(None, 8, 64, 64, 3)",
+    "layers_count": 11
+  },
+  "threshold_stats": {
+    "sample_count": 30,
+    "mean": 0.000652,
+    "std": 5.5e-05,
+    "median": 0.000654,
+    "q25": 0.000607,
+    "q75": 0.000707,
+    "q90": 0.000712,
+    "q95": 0.000712,
+    "recommended_threshold": 0.000712
+  },
+  "performance": {
+    "total_frames": 67,
+    "valid_measurements": 67,
+    "total_time_seconds": 15.2,
+    "avg_fps": 4.4,
+    "avg_processing_time_ms": 193.5,
+    "max_processing_time_ms": 293.5,
+    "min_processing_time_ms": 1.0,
+    "std_processing_time_ms": 49.5,
+    "theoretical_max_fps": 5.2
+  },
+  "confusion_matrix": {
+    "threshold_used": 0.000712,
+    "matrix": [
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        50
+      ]
+    ],
+    "metrics": {
+      "accuracy": 0.333,
+      "precision": 0.333,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1_score": 0.5
+    },
+    "counts": {
+      "true_negatives": 0,
+      "false_positives": 100,
+      "true_positives": 50,
+      "false_negatives": 0,
+      "total_samples": 150
+    }
+  }
+}
