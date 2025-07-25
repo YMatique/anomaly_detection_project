@@ -1,0 +1,60 @@
+DADOS PARA MONOGRAFIA - SISTEMA DE DETECÇÃO DE INVASÕES
+=================================================================
+Gerado em: 2025-07-25 13:40:27
+TensorFlow: 2.13.0
+=================================================================
+
+TABELA - ESPECIFICAÇÕES DO MODELO:
+----------------------------------------
+Parâmetros totais: 46,256
+Tamanho do arquivo: 0.63 MB
+Dimensão de entrada: (None, 8, 64, 64, 3)
+Dimensão de saída: (None, 8, 64, 64, 3)
+Número de camadas: 11
+
+TABELA - ESTATÍSTICAS DO THRESHOLD:
+----------------------------------------
+Amostras analisadas: 30
+Erro médio: 0.000652
+Desvio padrão: 0.000055
+Mediana: 0.000654
+Percentil 90%: 0.000712
+Percentil 95%: 0.000712
+Threshold adotado: 0.000712
+
+TABELA - PERFORMANCE EM TEMPO REAL:
+----------------------------------------
+Frames processados: 67
+Medições válidas: 67
+Tempo total: 15.2s
+FPS médio: 4.4
+FPS teórico máximo: 5.2
+Tempo médio de processamento: 193.5ms
+Tempo máximo: 293.5ms
+Tempo mínimo: 1.0ms
+Desvio padrão: 49.5ms
+
+TABELA - MATRIZ DE CONFUSÃO:
+----------------------------------------
+Threshold usado: 0.000712
+Verdadeiros Negativos (TN): 0
+Falsos Positivos (FP): 100
+Verdadeiros Positivos (TP): 50
+Falsos Negativos (FN): 0
+Total de amostras: 150
+
+TABELA - MÉTRICAS DE CLASSIFICAÇÃO:
+----------------------------------------
+Accuracy: 0.333 (33.3%)
+Precision: 0.333 (33.3%)
+Recall: 1.000 (100.0%)
+Specificity: 0.000 (0.0%)
+F1_score: 0.500 (50.0%)
+
+=================================================================
+ARQUIVOS GERADOS:
+- final_metrics_report.json (dados completos)
+- threshold_analysis.png (análise de threshold)
+- performance_metrics.png (métricas de performance)
+- confusion_matrix.png (matriz de confusão)
+=================================================================
