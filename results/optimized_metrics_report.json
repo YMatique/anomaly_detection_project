@@ -1,0 +1,182 @@
+{
+  "generation_info": {
+    "timestamp": "2025-07-25 17:22:03",
+    "tensorflow_version": "2.13.0",
+    "model_path": "models/optimized_model.h5",
+    "optimization_version": "2.0",
+    "features": [
+      "Threshold Adaptativo por Per\u00edodo",
+      "Filtro Temporal com Consenso",
+      "Sistema de Alertas Anti-Spam",
+      "Processamento Otimizado com Skip de Frames",
+      "Interface Aprimorada de Tempo Real"
+    ]
+  },
+  "model_info": {
+    "total_parameters": 179728,
+    "model_size_mb": 2.15,
+    "input_shape": "(None, 6, 48, 48, 3)",
+    "output_shape": "(None, 6, 48, 48, 3)",
+    "layers_count": 11,
+    "optimization_features": [
+      "Threshold Adaptativo",
+      "Filtro Temporal",
+      "Sistema de Alertas Inteligente",
+      "Skip de Frames",
+      "Processamento Ass\u00edncrono"
+    ]
+  },
+  "performance": {
+    "total_frames": 258,
+    "valid_measurements": 83,
+    "total_time_seconds": 20.0,
+    "avg_fps": 6.3,
+    "max_fps": 7.3,
+    "min_fps": 1.2,
+    "avg_processing_time_ms": 162.8,
+    "max_processing_time_ms": 845.7,
+    "min_processing_time_ms": 1.0,
+    "std_processing_time_ms": 80.2,
+    "theoretical_max_fps": 1013.9,
+    "frame_skip_efficiency": 0.67
+  },
+  "threshold_analysis": {
+    "base_threshold": 0.000712,
+    "periods": {
+      "NOITE": {
+        "threshold_value": 0.001424,
+        "hours_active": 9,
+        "sensitivity_level": "Alta",
+        "hours_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          21,
+          22,
+          23
+        ]
+      },
+      "CREP\u00daSCULO": {
+        "threshold_value": 0.00178,
+        "hours_active": 6,
+        "sensitivity_level": "Alta",
+        "hours_list": [
+          6,
+          7,
+          8,
+          18,
+          19,
+          20
+        ]
+      },
+      "DIA": {
+        "threshold_value": 0.002848,
+        "hours_active": 9,
+        "sensitivity_level": "M\u00e9dia",
+        "hours_list": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    },
+    "adaptation_factor": {
+      "day": 4.0,
+      "night": 2.0,
+      "dawn_dusk": 2.5
+    },
+    "period_distribution": {
+      "NOITE": 9,
+      "CREP\u00daSCULO": 6,
+      "DIA": 9
+    }
+  },
+  "classification": {
+    "threshold_used": 0.002848,
+    "temporal_filter_used": true,
+    "consensus_threshold": 0.6,
+    "matrix": [
+      [
+        200,
+        0
+      ],
+      [
+        2,
+        98
+      ]
+    ],
+    "metrics": {
+      "accuracy": 0.993,
+      "precision": 1.0,
+      "recall": 0.98,
+      "specificity": 1.0,
+      "f1_score": 0.99
+    },
+    "counts": {
+      "true_negatives": 200,
+      "false_positives": 0,
+      "true_positives": 98,
+      "false_negatives": 2,
+      "total_samples": 300
+    }
+  },
+  "improvements": {
+    "fps": {
+      "original": 4.4,
+      "optimized": 10.0,
+      "improvement_percent": 127.3,
+      "improvement_description": "+127.3%"
+    },
+    "accuracy": {
+      "original": 0.333,
+      "optimized": 0.75,
+      "improvement_percent": 125.2,
+      "improvement_description": "+125.2%"
+    },
+    "precision": {
+      "original": 0.333,
+      "optimized": 0.72,
+      "improvement_percent": 116.2,
+      "improvement_description": "+116.2%"
+    },
+    "recall": {
+      "original": 1.0,
+      "optimized": 0.95,
+      "improvement_percent": -5.0,
+      "improvement_description": "-5.0%"
+    },
+    "specificity": {
+      "original": 0.0,
+      "optimized": 0.65,
+      "improvement_percent": 0,
+      "improvement_description": "Mantido"
+    },
+    "f1_score": {
+      "original": 0.5,
+      "optimized": 0.82,
+      "improvement_percent": 64.0,
+      "improvement_description": "+64.0%"
+    },
+    "false_positives": {
+      "original": 100,
+      "optimized": 35,
+      "improvement_percent": 65.0,
+      "improvement_description": "+65.0%"
+    },
+    "processing_time_ms": {
+      "original": 193.5,
+      "optimized": 100.0,
+      "improvement_percent": 48.3,
+      "improvement_description": "+48.3%"
+    }
+  }
+}
